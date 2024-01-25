@@ -8,3 +8,4 @@ C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.csproj.Ge
 C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.csproj.CoreCompileInputs.cache
 C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.exe
 C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.pdb
+C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Jpop.resources
