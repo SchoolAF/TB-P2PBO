@@ -1,0 +1,10 @@
+C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\bin\Debug\TB-P2PBO.exe.config
+C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\bin\Debug\TB-P2PBO.exe
+C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\bin\Debug\TB-P2PBO.pdb
+C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.csproj.AssemblyReference.cache
+C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.Form1.resources
+C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.Properties.Resources.resources
+C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.csproj.GenerateResource.cache
+C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.csproj.CoreCompileInputs.cache
+C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.exe
+C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.pdb
