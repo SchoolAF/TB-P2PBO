@@ -31,5 +31,35 @@ namespace TB_P2PBO
             // Menampilkan form Jpop
             jpopForm.Show();
         }
+
+        private void btn_Kpop_Click(object sender, EventArgs e)
+        {
+            Kpop kpopForm = new Kpop();
+
+            // Menampilkan form Jpop
+            kpopForm.Show();
+        }
+
+        private void btn_Rnb_Click(object sender, EventArgs e)
+        {
+            Rnb rnbForm = new Rnb();
+
+            // Menampilkan form Jpop
+            rnbForm.Show();
+        }
+
+        private void btn_Dub_Click(object sender, EventArgs e)
+        {
+            // Membuat objek form Dubstep
+            Dubstep dubstepForm = new Dubstep();
+
+            // Menampilkan form Dubstep secara modally
+            dubstepForm.ShowDialog();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

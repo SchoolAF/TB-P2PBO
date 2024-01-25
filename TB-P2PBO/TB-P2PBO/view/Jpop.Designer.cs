@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Jpop));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb_jpop = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,36 +38,28 @@
             this.rb_jpopL = new System.Windows.Forms.RadioButton();
             this.rb_jpopP = new System.Windows.Forms.RadioButton();
             this.btn_simpanJpop = new System.Windows.Forms.Button();
+            this.btn_keluarJpop = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // cb_jpop
             // 
-            this.pictureBox1.Image = global::TB_P2PBO.Properties.Resources._20240125_181814;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(329, 157);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cb_jpop.FormattingEnabled = true;
+            this.cb_jpop.Items.AddRange(new object[] {
             "Yoasobi, Jakarta, 26 Febuari 2024",
             "Aimer, Filipina, 05 Juni 2024",
             "Fujii Kaze, Australia 12 Desember 2025"});
-            this.comboBox1.Location = new System.Drawing.Point(32, 176);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(329, 21);
-            this.comboBox1.TabIndex = 1;
+            this.cb_jpop.Location = new System.Drawing.Point(38, 185);
+            this.cb_jpop.Name = "cb_jpop";
+            this.cb_jpop.Size = new System.Drawing.Size(329, 21);
+            this.cb_jpop.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 227);
+            this.label1.Location = new System.Drawing.Point(38, 236);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 15);
             this.label1.TabIndex = 2;
@@ -78,7 +69,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(32, 284);
+            this.label2.Location = new System.Drawing.Point(38, 293);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 15);
             this.label2.TabIndex = 3;
@@ -88,7 +79,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(32, 337);
+            this.label3.Location = new System.Drawing.Point(38, 346);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 15);
             this.label3.TabIndex = 4;
@@ -96,14 +87,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(147, 225);
+            this.textBox1.Location = new System.Drawing.Point(153, 234);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(156, 20);
             this.textBox1.TabIndex = 5;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(147, 282);
+            this.textBox2.Location = new System.Drawing.Point(153, 291);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(156, 20);
             this.textBox2.TabIndex = 6;
@@ -112,7 +103,7 @@
             // 
             this.rb_jpopL.AutoSize = true;
             this.rb_jpopL.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_jpopL.Location = new System.Drawing.Point(147, 337);
+            this.rb_jpopL.Location = new System.Drawing.Point(153, 346);
             this.rb_jpopL.Name = "rb_jpopL";
             this.rb_jpopL.Size = new System.Drawing.Size(75, 18);
             this.rb_jpopL.TabIndex = 7;
@@ -124,7 +115,7 @@
             // 
             this.rb_jpopP.AutoSize = true;
             this.rb_jpopP.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_jpopP.Location = new System.Drawing.Point(228, 337);
+            this.rb_jpopP.Location = new System.Drawing.Point(234, 346);
             this.rb_jpopP.Name = "rb_jpopP";
             this.rb_jpopP.Size = new System.Drawing.Size(89, 18);
             this.rb_jpopP.TabIndex = 8;
@@ -137,18 +128,42 @@
             this.btn_simpanJpop.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btn_simpanJpop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_simpanJpop.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_simpanJpop.Location = new System.Drawing.Point(32, 399);
+            this.btn_simpanJpop.Location = new System.Drawing.Point(153, 408);
             this.btn_simpanJpop.Name = "btn_simpanJpop";
             this.btn_simpanJpop.Size = new System.Drawing.Size(75, 23);
             this.btn_simpanJpop.TabIndex = 9;
             this.btn_simpanJpop.Text = "SIMPAN";
             this.btn_simpanJpop.UseVisualStyleBackColor = false;
             // 
+            // btn_keluarJpop
+            // 
+            this.btn_keluarJpop.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btn_keluarJpop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_keluarJpop.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_keluarJpop.Location = new System.Drawing.Point(234, 408);
+            this.btn_keluarJpop.Name = "btn_keluarJpop";
+            this.btn_keluarJpop.Size = new System.Drawing.Size(75, 23);
+            this.btn_keluarJpop.TabIndex = 10;
+            this.btn_keluarJpop.Text = "KELUAR";
+            this.btn_keluarJpop.UseVisualStyleBackColor = false;
+            this.btn_keluarJpop.Click += new System.EventHandler(this.btn_keluarJpop_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TB_P2PBO.Properties.Resources._20240125_181814;
+            this.pictureBox1.Location = new System.Drawing.Point(38, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(329, 157);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Jpop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(402, 450);
+            this.Controls.Add(this.btn_keluarJpop);
             this.Controls.Add(this.btn_simpanJpop);
             this.Controls.Add(this.rb_jpopP);
             this.Controls.Add(this.rb_jpopL);
@@ -157,7 +172,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cb_jpop);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Jpop";
@@ -171,7 +186,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_jpop;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -180,5 +195,6 @@
         private System.Windows.Forms.RadioButton rb_jpopL;
         private System.Windows.Forms.RadioButton rb_jpopP;
         private System.Windows.Forms.Button btn_simpanJpop;
+        private System.Windows.Forms.Button btn_keluarJpop;
     }
 }

@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="view\Dubstep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Dubstep.Designer.cs">
+      <DependentUpon>Dubstep.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,21 @@
     <Compile Include="view\Jpop.Designer.cs">
       <DependentUpon>Jpop.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\Kpop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Kpop.Designer.cs">
+      <DependentUpon>Kpop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\Rnb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Rnb.Designer.cs">
+      <DependentUpon>Rnb.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="view\Dubstep.resx">
+      <DependentUpon>Dubstep.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +97,12 @@
     </Compile>
     <EmbeddedResource Include="view\Jpop.resx">
       <DependentUpon>Jpop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Kpop.resx">
+      <DependentUpon>Kpop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Rnb.resx">
+      <DependentUpon>Rnb.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -104,6 +131,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\20240125_181814.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20240125_203703.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20240125_210445.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20240125_214559.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

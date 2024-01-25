@@ -16,5 +16,10 @@ namespace TB_P2PBO.view
         {
             InitializeComponent();
         }
+
+        private void btn_keluarJpop_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

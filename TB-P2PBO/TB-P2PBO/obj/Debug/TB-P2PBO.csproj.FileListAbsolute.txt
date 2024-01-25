@@ -9,3 +9,17 @@ C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.csproj.Co
 C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.exe
 C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.pdb
 C:\Users\herob\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Jpop.resources
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\bin\Debug\TB-P2PBO.exe.config
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\bin\Debug\TB-P2PBO.exe
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\bin\Debug\TB-P2PBO.pdb
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.csproj.AssemblyReference.cache
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.Form1.resources
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.Properties.Resources.resources
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Jpop.resources
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.csproj.GenerateResource.cache
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.csproj.CoreCompileInputs.cache
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.exe
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.pdb
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Kpop.resources
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Rnb.resources
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Dubstep.resources

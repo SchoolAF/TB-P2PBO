@@ -87,6 +87,7 @@
             this.btn_Kpop.TabIndex = 5;
             this.btn_Kpop.Text = "View All";
             this.btn_Kpop.UseVisualStyleBackColor = false;
+            this.btn_Kpop.Click += new System.EventHandler(this.btn_Kpop_Click);
             // 
             // btn_Rnb
             // 
@@ -98,6 +99,7 @@
             this.btn_Rnb.TabIndex = 7;
             this.btn_Rnb.Text = "View All";
             this.btn_Rnb.UseVisualStyleBackColor = false;
+            this.btn_Rnb.Click += new System.EventHandler(this.btn_Rnb_Click);
             // 
             // btn_Dub
             // 
@@ -109,6 +111,7 @@
             this.btn_Dub.TabIndex = 9;
             this.btn_Dub.Text = "View All";
             this.btn_Dub.UseVisualStyleBackColor = false;
+            this.btn_Dub.Click += new System.EventHandler(this.btn_Dub_Click);
             // 
             // pictureBox4
             // 
