@@ -73,6 +73,12 @@
     <Compile Include="view\Kpop.Designer.cs">
       <DependentUpon>Kpop.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\Rnb.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\Kpop.resx">
       <DependentUpon>Kpop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\Rnb.resx">
       <DependentUpon>Rnb.cs</DependentUpon>
@@ -140,6 +149,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\20240125_214559.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20240125_141350.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

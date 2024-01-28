@@ -122,9 +122,9 @@
             this.label2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(37, 292);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 15);
+            this.label2.Size = new System.Drawing.Size(44, 15);
             this.label2.TabIndex = 25;
-            this.label2.Text = "Nomor Hp :";
+            this.label2.Text = "Email :";
             // 
             // label1
             // 

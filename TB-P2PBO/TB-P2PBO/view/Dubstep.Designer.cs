@@ -33,7 +33,7 @@
             this.btn_simpanDbs = new System.Windows.Forms.Button();
             this.rb_dbsP = new System.Windows.Forms.RadioButton();
             this.rb_dbsL = new System.Windows.Forms.RadioButton();
-            this.tb_nomorDbs = new System.Windows.Forms.TextBox();
+            this.tb_emailDbs = new System.Windows.Forms.TextBox();
             this.tb_namaDbs = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -92,12 +92,12 @@
             this.rb_dbsL.Text = "Laki-Laki";
             this.rb_dbsL.UseVisualStyleBackColor = true;
             // 
-            // tb_nomorDbs
+            // tb_emailDbs
             // 
-            this.tb_nomorDbs.Location = new System.Drawing.Point(152, 290);
-            this.tb_nomorDbs.Name = "tb_nomorDbs";
-            this.tb_nomorDbs.Size = new System.Drawing.Size(156, 20);
-            this.tb_nomorDbs.TabIndex = 39;
+            this.tb_emailDbs.Location = new System.Drawing.Point(152, 290);
+            this.tb_emailDbs.Name = "tb_emailDbs";
+            this.tb_emailDbs.Size = new System.Drawing.Size(156, 20);
+            this.tb_emailDbs.TabIndex = 39;
             // 
             // tb_namaDbs
             // 
@@ -122,9 +122,9 @@
             this.label2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(37, 292);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 15);
+            this.label2.Size = new System.Drawing.Size(44, 15);
             this.label2.TabIndex = 36;
-            this.label2.Text = "Nomor Hp :";
+            this.label2.Text = "Email :";
             // 
             // label1
             // 
@@ -167,7 +167,7 @@
             this.Controls.Add(this.btn_simpanDbs);
             this.Controls.Add(this.rb_dbsP);
             this.Controls.Add(this.rb_dbsL);
-            this.Controls.Add(this.tb_nomorDbs);
+            this.Controls.Add(this.tb_emailDbs);
             this.Controls.Add(this.tb_namaDbs);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -189,7 +189,7 @@
         private System.Windows.Forms.Button btn_simpanDbs;
         private System.Windows.Forms.RadioButton rb_dbsP;
         private System.Windows.Forms.RadioButton rb_dbsL;
-        private System.Windows.Forms.TextBox tb_nomorDbs;
+        private System.Windows.Forms.TextBox tb_emailDbs;
         private System.Windows.Forms.TextBox tb_namaDbs;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

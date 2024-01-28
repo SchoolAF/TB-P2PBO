@@ -23,3 +23,4 @@ C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.pdb
 C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Kpop.resources
 C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Rnb.resources
 C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Dubstep.resources
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Loading.resources

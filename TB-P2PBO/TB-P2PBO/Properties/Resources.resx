@@ -127,6 +127,9 @@
   <data name="20240125_165828" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\20240125_165828.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="20240125_214559" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20240125_214559.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="20240125_181814" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\20240125_181814.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,7 +142,7 @@
   <data name="20240125_171512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\20240125_171512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="20240125_214559" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\20240125_214559.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="20240125_141350" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20240125_141350.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

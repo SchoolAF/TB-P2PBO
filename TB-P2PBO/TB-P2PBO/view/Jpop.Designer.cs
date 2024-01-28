@@ -33,8 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_namaJpop = new System.Windows.Forms.TextBox();
+            this.tb_emailJpop = new System.Windows.Forms.TextBox();
             this.rb_jpopL = new System.Windows.Forms.RadioButton();
             this.rb_jpopP = new System.Windows.Forms.RadioButton();
             this.btn_simpanJpop = new System.Windows.Forms.Button();
@@ -71,9 +71,9 @@
             this.label2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(38, 293);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 15);
+            this.label2.Size = new System.Drawing.Size(44, 15);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Nomor Hp :";
+            this.label2.Text = "Email :";
             // 
             // label3
             // 
@@ -85,19 +85,19 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Jenis Kelamin :";
             // 
-            // textBox1
+            // tb_namaJpop
             // 
-            this.textBox1.Location = new System.Drawing.Point(153, 234);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 20);
-            this.textBox1.TabIndex = 5;
+            this.tb_namaJpop.Location = new System.Drawing.Point(153, 234);
+            this.tb_namaJpop.Name = "tb_namaJpop";
+            this.tb_namaJpop.Size = new System.Drawing.Size(156, 20);
+            this.tb_namaJpop.TabIndex = 5;
             // 
-            // textBox2
+            // tb_emailJpop
             // 
-            this.textBox2.Location = new System.Drawing.Point(153, 291);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(156, 20);
-            this.textBox2.TabIndex = 6;
+            this.tb_emailJpop.Location = new System.Drawing.Point(153, 291);
+            this.tb_emailJpop.Name = "tb_emailJpop";
+            this.tb_emailJpop.Size = new System.Drawing.Size(156, 20);
+            this.tb_emailJpop.TabIndex = 6;
             // 
             // rb_jpopL
             // 
@@ -167,8 +167,8 @@
             this.Controls.Add(this.btn_simpanJpop);
             this.Controls.Add(this.rb_jpopP);
             this.Controls.Add(this.rb_jpopL);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_emailJpop);
+            this.Controls.Add(this.tb_namaJpop);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -190,8 +190,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_namaJpop;
+        private System.Windows.Forms.TextBox tb_emailJpop;
         private System.Windows.Forms.RadioButton rb_jpopL;
         private System.Windows.Forms.RadioButton rb_jpopP;
         private System.Windows.Forms.Button btn_simpanJpop;

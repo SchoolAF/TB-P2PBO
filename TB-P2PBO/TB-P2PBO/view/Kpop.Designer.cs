@@ -33,7 +33,7 @@
             this.btn_simpanKpop = new System.Windows.Forms.Button();
             this.rb_kpopP = new System.Windows.Forms.RadioButton();
             this.rb_kpopL = new System.Windows.Forms.RadioButton();
-            this.tb_nomorKpop = new System.Windows.Forms.TextBox();
+            this.tb_emailKpop = new System.Windows.Forms.TextBox();
             this.tb_namaKpop = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -92,12 +92,12 @@
             this.rb_kpopL.Text = "Laki-Laki";
             this.rb_kpopL.UseVisualStyleBackColor = true;
             // 
-            // tb_nomorKpop
+            // tb_emailKpop
             // 
-            this.tb_nomorKpop.Location = new System.Drawing.Point(152, 290);
-            this.tb_nomorKpop.Name = "tb_nomorKpop";
-            this.tb_nomorKpop.Size = new System.Drawing.Size(156, 20);
-            this.tb_nomorKpop.TabIndex = 17;
+            this.tb_emailKpop.Location = new System.Drawing.Point(152, 290);
+            this.tb_emailKpop.Name = "tb_emailKpop";
+            this.tb_emailKpop.Size = new System.Drawing.Size(156, 20);
+            this.tb_emailKpop.TabIndex = 17;
             // 
             // tb_namaKpop
             // 
@@ -122,9 +122,9 @@
             this.label2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(37, 292);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 15);
+            this.label2.Size = new System.Drawing.Size(44, 15);
             this.label2.TabIndex = 14;
-            this.label2.Text = "Nomor Hp :";
+            this.label2.Text = "Email :";
             // 
             // label1
             // 
@@ -167,7 +167,7 @@
             this.Controls.Add(this.btn_simpanKpop);
             this.Controls.Add(this.rb_kpopP);
             this.Controls.Add(this.rb_kpopL);
-            this.Controls.Add(this.tb_nomorKpop);
+            this.Controls.Add(this.tb_emailKpop);
             this.Controls.Add(this.tb_namaKpop);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -189,7 +189,7 @@
         private System.Windows.Forms.Button btn_simpanKpop;
         private System.Windows.Forms.RadioButton rb_kpopP;
         private System.Windows.Forms.RadioButton rb_kpopL;
-        private System.Windows.Forms.TextBox tb_nomorKpop;
+        private System.Windows.Forms.TextBox tb_emailKpop;
         private System.Windows.Forms.TextBox tb_namaKpop;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
