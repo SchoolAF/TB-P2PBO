@@ -67,6 +67,7 @@
             this.btn_simpanKpop.TabIndex = 20;
             this.btn_simpanKpop.Text = "SIMPAN";
             this.btn_simpanKpop.UseVisualStyleBackColor = false;
+            this.btn_simpanKpop.Click += new System.EventHandler(this.btn_simpanKpop_Click);
             // 
             // rb_kpopP
             // 
@@ -138,6 +139,7 @@
             // 
             // cb_kpop
             // 
+            this.cb_kpop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_kpop.FormattingEnabled = true;
             this.cb_kpop.Items.AddRange(new object[] {
             "Zico, Singapura, 07 Juli 2024",

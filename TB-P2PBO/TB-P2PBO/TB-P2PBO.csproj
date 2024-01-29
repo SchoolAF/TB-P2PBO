@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controller\tiket.cs" />
     <Compile Include="view\Dubstep.cs">
       <SubType>Form</SubType>
     </Compile>

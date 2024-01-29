@@ -33,7 +33,7 @@
             this.btn_simpanRnb = new System.Windows.Forms.Button();
             this.rb_rnbP = new System.Windows.Forms.RadioButton();
             this.rb_rnbL = new System.Windows.Forms.RadioButton();
-            this.tb_nomorRnb = new System.Windows.Forms.TextBox();
+            this.tb_emailRnb = new System.Windows.Forms.TextBox();
             this.tb_namaRnb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -67,6 +67,7 @@
             this.btn_simpanRnb.TabIndex = 31;
             this.btn_simpanRnb.Text = "SIMPAN";
             this.btn_simpanRnb.UseVisualStyleBackColor = false;
+            this.btn_simpanRnb.Click += new System.EventHandler(this.btn_simpanRnb_Click);
             // 
             // rb_rnbP
             // 
@@ -92,12 +93,12 @@
             this.rb_rnbL.Text = "Laki-Laki";
             this.rb_rnbL.UseVisualStyleBackColor = true;
             // 
-            // tb_nomorRnb
+            // tb_emailRnb
             // 
-            this.tb_nomorRnb.Location = new System.Drawing.Point(152, 290);
-            this.tb_nomorRnb.Name = "tb_nomorRnb";
-            this.tb_nomorRnb.Size = new System.Drawing.Size(156, 20);
-            this.tb_nomorRnb.TabIndex = 28;
+            this.tb_emailRnb.Location = new System.Drawing.Point(152, 290);
+            this.tb_emailRnb.Name = "tb_emailRnb";
+            this.tb_emailRnb.Size = new System.Drawing.Size(156, 20);
+            this.tb_emailRnb.TabIndex = 28;
             // 
             // tb_namaRnb
             // 
@@ -138,6 +139,7 @@
             // 
             // cb_Rnb
             // 
+            this.cb_Rnb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_Rnb.FormattingEnabled = true;
             this.cb_Rnb.Items.AddRange(new object[] {
             "The Weekend, Jepang, 16 Maret 2024",
@@ -167,7 +169,7 @@
             this.Controls.Add(this.btn_simpanRnb);
             this.Controls.Add(this.rb_rnbP);
             this.Controls.Add(this.rb_rnbL);
-            this.Controls.Add(this.tb_nomorRnb);
+            this.Controls.Add(this.tb_emailRnb);
             this.Controls.Add(this.tb_namaRnb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -189,7 +191,7 @@
         private System.Windows.Forms.Button btn_simpanRnb;
         private System.Windows.Forms.RadioButton rb_rnbP;
         private System.Windows.Forms.RadioButton rb_rnbL;
-        private System.Windows.Forms.TextBox tb_nomorRnb;
+        private System.Windows.Forms.TextBox tb_emailRnb;
         private System.Windows.Forms.TextBox tb_namaRnb;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

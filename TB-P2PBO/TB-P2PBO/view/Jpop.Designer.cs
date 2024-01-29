@@ -45,6 +45,7 @@
             // 
             // cb_jpop
             // 
+            this.cb_jpop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_jpop.FormattingEnabled = true;
             this.cb_jpop.Items.AddRange(new object[] {
             "Yoasobi, Jakarta, 26 Febuari 2024",
@@ -134,6 +135,7 @@
             this.btn_simpanJpop.TabIndex = 9;
             this.btn_simpanJpop.Text = "SIMPAN";
             this.btn_simpanJpop.UseVisualStyleBackColor = false;
+            this.btn_simpanJpop.Click += new System.EventHandler(this.btn_simpanJpop_Click);
             // 
             // btn_keluarJpop
             // 

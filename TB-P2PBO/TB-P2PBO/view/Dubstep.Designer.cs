@@ -67,6 +67,7 @@
             this.btn_simpanDbs.TabIndex = 42;
             this.btn_simpanDbs.Text = "SIMPAN";
             this.btn_simpanDbs.UseVisualStyleBackColor = false;
+            this.btn_simpanDbs.Click += new System.EventHandler(this.btn_simpanDbs_Click);
             // 
             // rb_dbsP
             // 
@@ -138,6 +139,7 @@
             // 
             // cb_Dbs
             // 
+            this.cb_Dbs.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_Dbs.FormattingEnabled = true;
             this.cb_Dbs.Items.AddRange(new object[] {
             "Leotrix, Russia, 18 Mei 2024",
