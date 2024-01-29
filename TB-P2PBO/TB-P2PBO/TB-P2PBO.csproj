@@ -99,8 +99,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controller\ComboboxItem.cs" />
     <Compile Include="controller\Koneksi.cs" />
+    <Compile Include="controller\orders.cs" />
     <Compile Include="controller\tiket.cs" />
+    <Compile Include="model\M_orders.cs" />
     <Compile Include="view\Dubstep.cs">
       <SubType>Form</SubType>
     </Compile>
