@@ -142,9 +142,7 @@
             this.cb_kpop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_kpop.FormattingEnabled = true;
             this.cb_kpop.Items.AddRange(new object[] {
-            "Zico, Singapura, 07 Juli 2024",
-            "Blackpink, Amerika, 19 September 2024",
-            "New Jeans, China 30 Desember 2024"});
+            ""});
             this.cb_kpop.Location = new System.Drawing.Point(37, 184);
             this.cb_kpop.Name = "cb_kpop";
             this.cb_kpop.Size = new System.Drawing.Size(329, 21);
@@ -179,6 +177,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Kpop";
             this.Text = "rhythmtix";
+            this.Load += new System.EventHandler(this.Kpop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

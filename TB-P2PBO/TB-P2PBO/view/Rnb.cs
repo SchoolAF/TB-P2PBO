@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,11 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TB_P2PBO.controller;
 
 namespace TB_P2PBO.view
 {
     public partial class Rnb : Form
     {
+        private Koneksi koneksi = new Koneksi();
+
         public Rnb()
         {
             InitializeComponent();
@@ -61,6 +65,44 @@ namespace TB_P2PBO.view
                            $"Jenis Kelamin: {jenisKelamin}";
 
             MessageBox.Show(pesan, "Pembelian Tiket", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void Rnb_Load(object sender, EventArgs e)
+        {
+            LoadEventDataIntoComboBox();
+
+        }
+
+        private void LoadEventDataIntoComboBox()
+        {
+            try
+            {
+                koneksi.OpenConnection();
+                string query = "SELECT artist, title, price, location, date FROM events WHERE genre='RNB'";
+                MySqlCommand cmd = new MySqlCommand(query, koneksi.kon);
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    cb_Rnb.Items.Clear();
+                    while (reader.Read())
+                    {
+                        string artist = reader["artist"].ToString();
+                        string title = reader["title"].ToString();
+                        string price = reader["price"].ToString();
+                        string location = reader["location"].ToString();
+                        string date = reader["date"].ToString();
+
+                        cb_Rnb.Items.Add(" [" + date + "] - " + artist + "  -" + title + " - USD " + price + " - " + location);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                koneksi.CloseConnection();
+            }
         }
     }
 }
