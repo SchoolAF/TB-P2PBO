@@ -47,14 +47,11 @@
             // 
             this.cb_jpop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_jpop.FormattingEnabled = true;
-            this.cb_jpop.Items.AddRange(new object[] {
-            "Yoasobi, Jakarta, 26 Febuari 2024",
-            "Aimer, Filipina, 05 Juni 2024",
-            "Fujii Kaze, Australia 12 Desember 2025"});
             this.cb_jpop.Location = new System.Drawing.Point(38, 185);
             this.cb_jpop.Name = "cb_jpop";
             this.cb_jpop.Size = new System.Drawing.Size(329, 21);
             this.cb_jpop.TabIndex = 1;
+            this.cb_jpop.SelectedIndexChanged += new System.EventHandler(this.cb_jpop_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -179,6 +176,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Jpop";
             this.Text = "rhythmtix";
+            this.Load += new System.EventHandler(this.Jpop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

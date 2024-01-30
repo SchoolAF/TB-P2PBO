@@ -141,10 +141,6 @@
             // 
             this.cb_Dbs.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_Dbs.FormattingEnabled = true;
-            this.cb_Dbs.Items.AddRange(new object[] {
-            "Leotrix, Russia, 18 Mei 2024",
-            "Automhate, India, 17 Agustus 2024",
-            "WetPasta, ULBI indonesia 09 Juli 2026"});
             this.cb_Dbs.Location = new System.Drawing.Point(37, 184);
             this.cb_Dbs.Name = "cb_Dbs";
             this.cb_Dbs.Size = new System.Drawing.Size(329, 21);
@@ -179,6 +175,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Dubstep";
             this.Text = "rhythmtix";
+            this.Load += new System.EventHandler(this.Dubstep_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
