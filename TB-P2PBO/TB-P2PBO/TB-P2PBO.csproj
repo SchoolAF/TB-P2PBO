@@ -102,7 +102,8 @@
     <Compile Include="controller\ComboboxItem.cs" />
     <Compile Include="controller\Koneksi.cs" />
     <Compile Include="controller\orders.cs" />
-    <Compile Include="controller\tiket.cs" />
+    <Compile Include="controller\ticket.cs" />
+    <Compile Include="model\M_tickets.cs" />
     <Compile Include="view\AdminManageOrder.cs">
       <SubType>Form</SubType>
     </Compile>

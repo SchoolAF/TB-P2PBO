@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminTiket));
             this.gb_TiketKonser = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.dataTiket = new System.Windows.Forms.DataGridView();
             this.gb_TambahTiket = new System.Windows.Forms.GroupBox();
             this.cb_Genre_T = new System.Windows.Forms.ComboBox();
@@ -53,15 +54,26 @@
             // 
             // gb_TiketKonser
             // 
+            this.gb_TiketKonser.Controls.Add(this.label1);
             this.gb_TiketKonser.Controls.Add(this.dataTiket);
             this.gb_TiketKonser.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_TiketKonser.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.gb_TiketKonser.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.gb_TiketKonser.Location = new System.Drawing.Point(27, 28);
             this.gb_TiketKonser.Name = "gb_TiketKonser";
             this.gb_TiketKonser.Size = new System.Drawing.Size(708, 193);
             this.gb_TiketKonser.TabIndex = 0;
             this.gb_TiketKonser.TabStop = false;
-            this.gb_TiketKonser.Text = "Tiket Konser";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(6, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Tiket Konser";
             // 
             // dataTiket
             // 
@@ -70,6 +82,7 @@
             this.dataTiket.Name = "dataTiket";
             this.dataTiket.Size = new System.Drawing.Size(668, 157);
             this.dataTiket.TabIndex = 0;
+            this.dataTiket.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTiket_CellClick);
             // 
             // gb_TambahTiket
             // 
@@ -191,6 +204,7 @@
             this.btn_Hapus_Tiket.TabIndex = 3;
             this.btn_Hapus_Tiket.Text = "Hapus";
             this.btn_Hapus_Tiket.UseVisualStyleBackColor = false;
+            this.btn_Hapus_Tiket.Click += new System.EventHandler(this.btn_Hapus_Tiket_Click);
             // 
             // btn_Ubah_Tiket
             // 
@@ -202,6 +216,7 @@
             this.btn_Ubah_Tiket.TabIndex = 2;
             this.btn_Ubah_Tiket.Text = "Ubah";
             this.btn_Ubah_Tiket.UseVisualStyleBackColor = false;
+            this.btn_Ubah_Tiket.Click += new System.EventHandler(this.btn_Ubah_Tiket_Click);
             // 
             // btn_Simpan_Tiket
             // 
@@ -213,6 +228,7 @@
             this.btn_Simpan_Tiket.TabIndex = 1;
             this.btn_Simpan_Tiket.Text = "Simpan";
             this.btn_Simpan_Tiket.UseVisualStyleBackColor = false;
+            this.btn_Simpan_Tiket.Click += new System.EventHandler(this.btn_Simpan_Tiket_Click);
             // 
             // btn_Refresh_Tiket
             // 
@@ -224,6 +240,7 @@
             this.btn_Refresh_Tiket.TabIndex = 0;
             this.btn_Refresh_Tiket.Text = "Refresh";
             this.btn_Refresh_Tiket.UseVisualStyleBackColor = false;
+            this.btn_Refresh_Tiket.Click += new System.EventHandler(this.btn_Refresh_Tiket_Click);
             // 
             // AdminTiket
             // 
@@ -237,7 +254,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminTiket";
             this.Text = "rhythmtix-admin";
+            this.Load += new System.EventHandler(this.AdminTiket_Load);
             this.gb_TiketKonser.ResumeLayout(false);
+            this.gb_TiketKonser.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataTiket)).EndInit();
             this.gb_TambahTiket.ResumeLayout(false);
             this.gb_TambahTiket.PerformLayout();
@@ -264,5 +283,6 @@
         private System.Windows.Forms.DataGridView dataTiket;
         private System.Windows.Forms.DateTimePicker dateTime_T;
         private System.Windows.Forms.ComboBox cb_Genre_T;
+        private System.Windows.Forms.Label label1;
     }
 }

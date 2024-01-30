@@ -24,7 +24,7 @@ namespace TB_P2PBO.view
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (tbPwd.Text == "fajita")
+            if (tbPwd.Text == "1")
             {
                 this.Close();
                 ShowPanel();
