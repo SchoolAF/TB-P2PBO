@@ -36,9 +36,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TB_P2PBO.Properties.Resources._20240130_213640;
-            this.pictureBox1.Location = new System.Drawing.Point(-36, -10);
+            this.pictureBox1.Location = new System.Drawing.Point(-35, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(468, 383);
+            this.pictureBox1.Size = new System.Drawing.Size(524, 451);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -47,7 +47,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(401, 354);
+            this.ClientSize = new System.Drawing.Size(465, 429);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "About";

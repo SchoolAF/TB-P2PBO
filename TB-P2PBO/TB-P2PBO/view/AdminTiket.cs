@@ -225,5 +225,15 @@ namespace TB_P2PBO.view
             About aboutForm = new About();
             aboutForm.Show();
         }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+             
+        }
+
+        private void dataTiket_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

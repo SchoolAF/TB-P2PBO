@@ -61,5 +61,11 @@ namespace TB_P2PBO
         {
 
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            About aboutForm = new About();
+            aboutForm.Show();
+        }
     }
 }
