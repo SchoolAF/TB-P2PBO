@@ -61,9 +61,12 @@ namespace TB_P2PBO.view
 
         private void ExportToExcel(DataGridView dataGridView, string searchData)
         {
-            using (ExcelPackage excelPackage = new ExcelPackage())
+            // Set the LicenseContext using an alias
+            OfficeOpenXml.ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
+
+            using (OfficeOpenXml.ExcelPackage excelPackage = new OfficeOpenXml.ExcelPackage())
             {
-                ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets.Add("Sheet1");
+                OfficeOpenXml.ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets.Add("Sheet1");
                 // Export Headers
                 for (int j = 1; j <= dataGridView.ColumnCount; j++)
                 {
@@ -84,10 +87,8 @@ namespace TB_P2PBO.view
                 FileInfo excelFile = new FileInfo(searchData);
                 excelPackage.SaveAs(excelFile);
             }
-
-
-
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
