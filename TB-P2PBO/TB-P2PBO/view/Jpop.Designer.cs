@@ -51,6 +51,7 @@
             this.cb_jpop.Name = "cb_jpop";
             this.cb_jpop.Size = new System.Drawing.Size(329, 21);
             this.cb_jpop.TabIndex = 1;
+            this.cb_jpop.SelectedIndexChanged += new System.EventHandler(this.cb_jpop_SelectedIndexChanged);
             // 
             // label1
             // 

@@ -9,12 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TB_P2PBO.controller;
+using TB_P2PBO.model;
 
 namespace TB_P2PBO.view
 {
     public partial class Kpop : Form
     {
         private Koneksi koneksi = new Koneksi();
+        M_orders m_orders = new M_orders();
 
         public Kpop()
         {
@@ -28,7 +30,6 @@ namespace TB_P2PBO.view
 
         private void btn_simpanKpop_Click(object sender, EventArgs e)
         {
-
             // Validasi input
             if (cb_kpop.SelectedIndex == -1)
             {
@@ -54,8 +55,18 @@ namespace TB_P2PBO.view
                 return;
             }
 
-            // Jika semua validasi berhasil, tampilkan pesan pembelian berhasil
+            orders orders = new orders();
+            m_orders.ID = Guid.NewGuid().ToString();
+            m_orders.Nama = tb_namaKpop.Text;
+            m_orders.Email = tb_emailKpop.Text;
+
+
             string jenisKelamin = rb_kpopL.Checked ? "Laki-Laki" : "Perempuan";
+            m_orders.Gender = jenisKelamin;
+
+            orders.InsertOrder(m_orders);
+
+            // Jika semua validasi berhasil, tampilkan pesan pembelian berhasil
             string konserTerpilih = cb_kpop.SelectedItem.ToString();
 
             string pesan = $"Pembelian tiket berhasil!, Check Email\n\n" +
@@ -77,20 +88,23 @@ namespace TB_P2PBO.view
             try
             {
                 koneksi.OpenConnection();
-                string query = "SELECT artist, title, price, location, date FROM events WHERE genre='KPOP'";
+                string query = "SELECT id, artist, title, price, location, date FROM events WHERE genre='KPOP'";
                 MySqlCommand cmd = new MySqlCommand(query, koneksi.kon);
                 using (MySqlDataReader reader = cmd.ExecuteReader())
                 {
                     cb_kpop.Items.Clear();
                     while (reader.Read())
                     {
+                        string id = reader["id"].ToString();
                         string artist = reader["artist"].ToString();
                         string title = reader["title"].ToString();
                         string price = reader["price"].ToString();
                         string location = reader["location"].ToString();
                         string date = reader["date"].ToString();
 
-                        cb_kpop.Items.Add(" [" + date + "] - " + artist + "  -" + title + " - USD " + price + " - " + location);
+                        // Include the ID in the ComboBox items using the Tag property
+                        string displayText = $" [{date}] - {artist} - {title} - USD {price} - {location}";
+                        cb_kpop.Items.Add(new ComboboxItem(displayText, id));
                     }
                 }
             }
@@ -101,6 +115,14 @@ namespace TB_P2PBO.view
             finally
             {
                 koneksi.CloseConnection();
+            }
+        }
+
+        private void cb_kpop_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cb_kpop.SelectedItem is ComboboxItem selectedItem)
+            {
+                m_orders.IDEvent = selectedItem.Value;
             }
         }
     }
