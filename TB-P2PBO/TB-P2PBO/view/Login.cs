@@ -26,7 +26,11 @@ namespace TB_P2PBO.view
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            // Membuat objek form ParentForm
+            AdminPass AdminPass = new AdminPass();
 
+            // Menampilkan form ParentForm secara modally
+            AdminPass.ShowDialog();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -69,11 +73,7 @@ namespace TB_P2PBO.view
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Membuat objek form ParentForm
-            ParentForm parentForm = new ParentForm();
 
-            // Menampilkan form ParentForm secara modally
-            parentForm.ShowDialog();
         }
 
         private void btn_Login_Click(object sender, EventArgs e)

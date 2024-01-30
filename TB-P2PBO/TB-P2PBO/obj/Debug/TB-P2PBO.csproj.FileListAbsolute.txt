@@ -28,3 +28,23 @@ C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.vie
 C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.AdminTiket.resources
 C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.AdminManageOrder.resources
 C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.ParentForm.resources
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\bin\Debug\TB-P2PBO.exe.config
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\bin\Debug\TB-P2PBO.exe
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\bin\Debug\TB-P2PBO.pdb
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.csproj.AssemblyReference.cache
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.AdminManageOrder.resources
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.AdminTiket.resources
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Dubstep.resources
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.Form1.resources
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.Properties.Resources.resources
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Jpop.resources
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Kpop.resources
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Loading.resources
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Login.resources
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.ParentForm.resources
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Rnb.resources
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.csproj.GenerateResource.cache
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.csproj.CoreCompileInputs.cache
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.exe
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\obj\Debug\TB-P2PBO.pdb
+C:\Users\herob\Desktop\ups\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.AdminPass.resources
