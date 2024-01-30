@@ -149,6 +149,7 @@
             this.cb_Rnb.Name = "cb_Rnb";
             this.cb_Rnb.Size = new System.Drawing.Size(329, 21);
             this.cb_Rnb.TabIndex = 23;
+            this.cb_Rnb.SelectedIndexChanged += new System.EventHandler(this.cb_Rnb_SelectedIndexChanged);
             // 
             // pictureBox1
             // 
@@ -159,6 +160,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Rnb
             // 
@@ -179,6 +181,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Rnb";
             this.Text = "rhythmtix";
+            this.Load += new System.EventHandler(this.Rnb_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
