@@ -66,5 +66,19 @@ namespace TB_P2PBO.view
         {
             RemovePlaceholder(tb_password, "Password");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Membuat objek form ParentForm
+            ParentForm parentForm = new ParentForm();
+
+            // Menampilkan form ParentForm secara modally
+            parentForm.ShowDialog();
+        }
+
+        private void btn_Login_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

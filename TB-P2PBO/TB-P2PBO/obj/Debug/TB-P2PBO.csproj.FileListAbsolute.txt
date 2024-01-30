@@ -25,3 +25,6 @@ C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.vie
 C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Dubstep.resources
 C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Loading.resources
 C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.Login.resources
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.AdminTiket.resources
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.AdminManageOrder.resources
+C:\Users\Alif Fathur\Documents\TB-P2PBO\TB-P2PBO\TB-P2PBO\obj\Debug\TB_P2PBO.view.ParentForm.resources

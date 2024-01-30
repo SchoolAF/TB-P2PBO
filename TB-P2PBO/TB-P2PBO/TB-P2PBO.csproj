@@ -48,6 +48,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controller\tiket.cs" />
+    <Compile Include="view\AdminManageOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\AdminManageOrder.Designer.cs">
+      <DependentUpon>AdminManageOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\AdminTiket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\AdminTiket.Designer.cs">
+      <DependentUpon>AdminTiket.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\Dubstep.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,12 +98,24 @@
     <Compile Include="view\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\ParentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\ParentForm.Designer.cs">
+      <DependentUpon>ParentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\Rnb.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="view\Rnb.Designer.cs">
       <DependentUpon>Rnb.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="view\AdminManageOrder.resx">
+      <DependentUpon>AdminManageOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\AdminTiket.resx">
+      <DependentUpon>AdminTiket.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\Dubstep.resx">
       <DependentUpon>Dubstep.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ParentForm.resx">
+      <DependentUpon>ParentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\Rnb.resx">
       <DependentUpon>Rnb.cs</DependentUpon>
