@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TB_P2PBO.controller;
 
 namespace TB_P2PBO.view
 {
@@ -81,7 +82,30 @@ namespace TB_P2PBO.view
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
+            string username = tb_username.Text;
+            string password = tb_password.Text;
 
+            // Construct the SQL query to check the credentials
+            string query = $"SELECT * FROM users WHERE username='{username}' AND password='{password}'";
+
+            // Use the Koneksi class to execute the query and get the result
+            Koneksi koneksi = new Koneksi();
+            koneksi.OpenConnection();
+
+            DataTable dataTable = koneksi.ShowData(query);
+
+            koneksi.CloseConnection();
+
+            if (dataTable.Rows.Count > 0)
+            {
+                this.Hide();
+                Form1 Home = new Form1();
+                Home.Show();
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or password. Please try again.");
+            }
         }
     }
 }

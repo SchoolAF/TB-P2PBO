@@ -102,8 +102,16 @@
     <Compile Include="controller\ComboboxItem.cs" />
     <Compile Include="controller\Koneksi.cs" />
     <Compile Include="controller\orders.cs" />
+    <Compile Include="controller\users.cs" />
     <Compile Include="controller\ticket.cs" />
+    <Compile Include="model\M_users.cs" />
     <Compile Include="model\M_tickets.cs" />
+    <Compile Include="view\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\AdminManageOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +187,9 @@
     <Compile Include="view\Rnb.Designer.cs">
       <DependentUpon>Rnb.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="view\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\AdminManageOrder.resx">
       <DependentUpon>AdminManageOrder.cs</DependentUpon>
     </EmbeddedResource>

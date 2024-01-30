@@ -52,7 +52,7 @@
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(75, 23);
             this.btn_Login.TabIndex = 9;
-            this.btn_Login.Text = "NEXT";
+            this.btn_Login.Text = "Register";
             this.btn_Login.UseVisualStyleBackColor = true;
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
@@ -62,6 +62,7 @@
             this.tb_passReg.Name = "tb_passReg";
             this.tb_passReg.Size = new System.Drawing.Size(227, 20);
             this.tb_passReg.TabIndex = 8;
+            this.tb_passReg.UseSystemPasswordChar = true;
             this.tb_passReg.Enter += new System.EventHandler(this.tb_passReg_Enter);
             // 
             // tb_userReg
@@ -82,9 +83,11 @@
             this.Controls.Add(this.tb_userReg);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimizeBox = false;
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "rhythmtix";
+            this.Load += new System.EventHandler(this.Register_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

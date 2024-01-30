@@ -34,7 +34,6 @@
             this.tb_password = new System.Windows.Forms.TextBox();
             this.btn_Login = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,6 +62,7 @@
             this.tb_password.Name = "tb_password";
             this.tb_password.Size = new System.Drawing.Size(227, 20);
             this.tb_password.TabIndex = 4;
+            this.tb_password.UseSystemPasswordChar = true;
             this.tb_password.Enter += new System.EventHandler(this.tb_password_Enter);
             // 
             // btn_Login
@@ -86,21 +86,11 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(84, 109);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "label1";
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(401, 354);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.tb_password);
             this.Controls.Add(this.tb_username);
@@ -124,6 +114,5 @@
         private System.Windows.Forms.TextBox tb_username;
         private System.Windows.Forms.TextBox tb_password;
         private System.Windows.Forms.Button btn_Login;
-        private System.Windows.Forms.Label label1;
     }
 }

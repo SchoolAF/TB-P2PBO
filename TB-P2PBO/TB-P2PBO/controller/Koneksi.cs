@@ -1,10 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TB_P2PBO.controller
 {
@@ -30,14 +25,14 @@ namespace TB_P2PBO.controller
             command.ExecuteNonQuery();
         }
 
-        public object ShowData(string query)
+        public DataTable ShowData(string query)
         {
             MySqlDataAdapter adapter = new MySqlDataAdapter(query, connectionstring);
-            DataSet data = new DataSet();
+            DataTable dataTable = new DataTable();
 
-            adapter.Fill(data);
-            object datatable = data.Tables[0];
-            return datatable;
+            adapter.Fill(dataTable);
+
+            return dataTable;
         }
     }
 }
