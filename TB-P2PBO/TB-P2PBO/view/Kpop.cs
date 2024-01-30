@@ -118,7 +118,7 @@ namespace TB_P2PBO.view
             }
         }
 
-        private void cb_kpop_SelectedIndexChanged(object sender, EventArgs e)
+        private void cb_kpop_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             if (cb_kpop.SelectedItem is ComboboxItem selectedItem)
             {

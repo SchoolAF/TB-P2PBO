@@ -145,6 +145,7 @@
             this.cb_Dbs.Name = "cb_Dbs";
             this.cb_Dbs.Size = new System.Drawing.Size(329, 21);
             this.cb_Dbs.TabIndex = 34;
+            this.cb_Dbs.SelectedIndexChanged += new System.EventHandler(this.cb_Dbs_SelectedIndexChanged);
             // 
             // pictureBox1
             // 
