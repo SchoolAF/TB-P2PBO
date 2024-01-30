@@ -73,7 +73,10 @@ namespace TB_P2PBO.view
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            // Membuka Form Register
+            Register registerForm = new Register();
+            registerForm.Show();
         }
 
         private void btn_Login_Click(object sender, EventArgs e)
