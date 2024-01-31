@@ -32,9 +32,10 @@
             this.gb_TiketKonser = new System.Windows.Forms.GroupBox();
             this.dataTiket = new System.Windows.Forms.DataGridView();
             this.gb_ActionTicket = new System.Windows.Forms.GroupBox();
+            this.tbOrder_ID = new System.Windows.Forms.TextBox();
             this.btn_Cancel_Tiket = new System.Windows.Forms.Button();
             this.btn_Confirm_Tiket = new System.Windows.Forms.Button();
-            this.tbOrder_ID = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.gb_TiketKonser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataTiket)).BeginInit();
             this.gb_ActionTicket.SuspendLayout();
@@ -62,6 +63,7 @@
             // 
             // gb_ActionTicket
             // 
+            this.gb_ActionTicket.Controls.Add(this.button1);
             this.gb_ActionTicket.Controls.Add(this.tbOrder_ID);
             this.gb_ActionTicket.Controls.Add(this.btn_Cancel_Tiket);
             this.gb_ActionTicket.Controls.Add(this.btn_Confirm_Tiket);
@@ -69,16 +71,23 @@
             this.gb_ActionTicket.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.gb_ActionTicket.Location = new System.Drawing.Point(269, 237);
             this.gb_ActionTicket.Name = "gb_ActionTicket";
-            this.gb_ActionTicket.Size = new System.Drawing.Size(230, 198);
+            this.gb_ActionTicket.Size = new System.Drawing.Size(230, 209);
             this.gb_ActionTicket.TabIndex = 4;
             this.gb_ActionTicket.TabStop = false;
             this.gb_ActionTicket.Text = "Tombol Action";
+            // 
+            // tbOrder_ID
+            // 
+            this.tbOrder_ID.Location = new System.Drawing.Point(21, 42);
+            this.tbOrder_ID.Name = "tbOrder_ID";
+            this.tbOrder_ID.Size = new System.Drawing.Size(188, 20);
+            this.tbOrder_ID.TabIndex = 2;
             // 
             // btn_Cancel_Tiket
             // 
             this.btn_Cancel_Tiket.BackColor = System.Drawing.Color.White;
             this.btn_Cancel_Tiket.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_Cancel_Tiket.Location = new System.Drawing.Point(21, 138);
+            this.btn_Cancel_Tiket.Location = new System.Drawing.Point(21, 158);
             this.btn_Cancel_Tiket.Name = "btn_Cancel_Tiket";
             this.btn_Cancel_Tiket.Size = new System.Drawing.Size(188, 33);
             this.btn_Cancel_Tiket.TabIndex = 1;
@@ -90,7 +99,7 @@
             // 
             this.btn_Confirm_Tiket.BackColor = System.Drawing.Color.White;
             this.btn_Confirm_Tiket.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_Confirm_Tiket.Location = new System.Drawing.Point(21, 94);
+            this.btn_Confirm_Tiket.Location = new System.Drawing.Point(21, 77);
             this.btn_Confirm_Tiket.Name = "btn_Confirm_Tiket";
             this.btn_Confirm_Tiket.Size = new System.Drawing.Size(188, 33);
             this.btn_Confirm_Tiket.TabIndex = 0;
@@ -98,12 +107,17 @@
             this.btn_Confirm_Tiket.UseVisualStyleBackColor = false;
             this.btn_Confirm_Tiket.Click += new System.EventHandler(this.btn_Confirm_Tiket_Click);
             // 
-            // tbOrder_ID
+            // button1
             // 
-            this.tbOrder_ID.Location = new System.Drawing.Point(21, 57);
-            this.tbOrder_ID.Name = "tbOrder_ID";
-            this.tbOrder_ID.Size = new System.Drawing.Size(188, 20);
-            this.tbOrder_ID.TabIndex = 2;
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(21, 116);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(188, 33);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Export Excel";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // AdminManageOrder
             // 
@@ -132,5 +146,6 @@
         private System.Windows.Forms.Button btn_Cancel_Tiket;
         private System.Windows.Forms.Button btn_Confirm_Tiket;
         private System.Windows.Forms.TextBox tbOrder_ID;
+        private System.Windows.Forms.Button button1;
     }
 }
