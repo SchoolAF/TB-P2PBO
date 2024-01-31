@@ -29,5 +29,51 @@ namespace TB_P2PBO.controller
             }
             return status;
         }
+
+        public bool ConfirmOrder(string order_id)
+        {
+            bool status = false;
+            try
+            {
+                koneksi.OpenConnection();
+
+                string query = "UPDATE orders SET status='Confirmed' WHERE id = '" + order_id + "'";
+
+                koneksi.ExecuteQuery(query);
+
+                status = true;
+                MessageBox.Show("Transkaksi Berhasil!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                koneksi.CloseConnection();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "Gagal Update", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return status;
+        }
+
+        public bool CancelOrder(string order_id)
+        {
+            bool status = false;
+            try
+            {
+                koneksi.OpenConnection();
+
+                string query = "UPDATE orders SET status='Canceled' WHERE id = '" + order_id + "'";
+
+                koneksi.ExecuteQuery(query);
+
+                status = true;
+                MessageBox.Show("Transkaksi Berhasil dibatalkan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                koneksi.CloseConnection();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "Gagal Update", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return status;
+        }
     }
 }

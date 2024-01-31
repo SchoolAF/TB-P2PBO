@@ -147,6 +147,7 @@
             this.cb_kpop.Name = "cb_kpop";
             this.cb_kpop.Size = new System.Drawing.Size(329, 21);
             this.cb_kpop.TabIndex = 12;
+            this.cb_kpop.SelectedIndexChanged += new System.EventHandler(this.cb_kpop_SelectedIndexChanged_1);
             // 
             // pictureBox1
             // 
